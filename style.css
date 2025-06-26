@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fef6f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #d63384;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #d63384;
+}
+button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+.carrito-icono {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #d63384;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carrito-contenido {
+    margin-top: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    display: none; /* oculto por defecto */
+}
+
+.carrito-contenido.mostrar {
+    display: block;
+}
+.boton-agregar {
+    background-color: #d32e7d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.boton-agregar:hover {
+    background-color: #b71c65;
+}
+
+.boton-agregar img {
+    width: 18px;
+    height: 18px;
+}
+.boton-agregar-flotante {
+    position: fixed;
+    top: 20px;
+    right: 200px; /* puedes ajustar este valor */
+    margin-right: 10px;
+    background-color: #d32e7d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+.boton-agregar-flotante:hover {
+    background-color: #b71c65;
+}
+
+.boton-agregar-flotante img {
+    width: 18px;
+    height: 18px;
+}
